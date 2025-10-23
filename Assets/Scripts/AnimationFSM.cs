@@ -7,6 +7,7 @@ namespace AnimationFSM
     {
         public bool isOnGround;
         public bool movingX;
+        public bool movingY;
     }
 
     public abstract class State

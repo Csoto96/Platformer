@@ -26,4 +26,13 @@ namespace AnimationFSM
             return true;
         }
     }
+    public class FlyingState : State
+    {
+        public FlyingState(string animationName) : base(animationName) { }
+
+        public override bool isMatchingConditions(Conditions conditions)
+        {
+            return true;
+        }
+    }
 }

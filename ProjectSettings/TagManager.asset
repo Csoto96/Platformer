@@ -8,11 +8,13 @@ TagManager:
   - GoldCoin
   - Big_powerup
   - Speed_powerup
+  - enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Environment
@@ -20,7 +22,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Enemy
   - 
   - 
   - 

@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     bool onGround = false;
     bool JumpTriggered = false;
     public GameObject DeathScreen;
+    private Vector2 lastFacingDir = Vector2.right;
+    public Vector2 FacingDir => lastFacingDir;
     void Awake()
     {
         MoveRight = InputSystem.actions.FindAction("MoveRight");
@@ -65,10 +67,12 @@ public class PlayerController : MonoBehaviour
         if (XVelocity > 0)
         {
             sprite.flipX = false;
+            lastFacingDir = Vector2.right;
         }
         else if (XVelocity < 0)
         {
             sprite.flipX = true;
+            lastFacingDir = Vector2.left;
         }
         GetInput();
     }
